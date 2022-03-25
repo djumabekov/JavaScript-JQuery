@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+#container{
+    margin: 0 auto;
+    width: 390px;
+}
+
+#input_text_block, #input_email_block, #message {
+    border: 1.5px solid white;
+    border-radius: 6px;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+}
+
+#message{
+    height: 20px;
+}
+
+#buttons_container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button{
+    height: 40px;
+    width: 40px;
+    border: 1.5px solid white;
+    border-radius: 6px;
+    margin: 2px 0;
+    background-color: transparent;
+    color: white;
+}
+
+.space{
+    width: 210px;
+}
+
+[contenteditable]:empty:before {
+    content: attr(data-placeholder);
+    color: grey;
+    display: inline-block;
+    }

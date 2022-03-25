@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <!-- //=============Подключение виртуальной клавиатуры============= -->
+
+    <div id="container">
+        <!-- Поле ввода текста -->
+        <div id="input_text_block" contenteditable="true" data-placeholder="Текст"></div>
+        <!-- Поле ввода почты -->
+        <div id="input_email_block" contenteditable="true" data-placeholder="Email"></div>
+        <!-- кнопки клавиатуры -->
+        <div id="buttons_container"></div>
+        <!-- Статус отправки сообщения -->
+        <div id="message"  contenteditable="false" data-placeholder="Статус отправки сообщения"></div>
+    </div>   
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("Hgxyc_rTRigA4CI4F");
+    })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
