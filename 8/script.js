@@ -15,7 +15,7 @@ button.click(()=>{
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-            "x-rapidapi-key": "e9452b5dc7mshcec7903a92ac17ep19fe48jsnfaa3fe23377b"
+            "x-rapidapi-key": "___________my_rapid_key___________"
         }
     };
     
@@ -46,7 +46,7 @@ button.click(()=>{
             "method": "GET",
             "headers": {
             "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-            "x-rapidapi-key": "e9452b5dc7mshcec7903a92ac17ep19fe48jsnfaa3fe23377b"
+            "x-rapidapi-key": "___________my_rapid_key___________"
         }
     }
 
