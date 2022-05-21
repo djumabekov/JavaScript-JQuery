@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Форма добавления товаров на склад -->
+    <h3>Форма добавления товаров на склад: </h3>
+    <input type="text" id="productName" placeholder="названия товара">
+    <input type="text" id="purshasePrice" placeholder="закупочная цена">
+    <input type="text" id="sellPrice" placeholder="цена продажи">
+    <input type="text" id="productCount" placeholder="количество товаров">
+    <input type="button" id="addProductToWarehouseBtn" value="Добавить товар на склад">
+    <hr>
+
+    <!-- Статистика по складу -->
+    <h3>Статистика по складу: </h3>
+    <div id="warehouseStat"></div>
+
+    
+    <b>Зачислить деньги:</b> <input type="number" id="money" placeholder="сумма">
+    <input type="button" id="addMoney" value="Зачислить деньги">
+
+    <hr>
+    <div>
+
+    <!-- Ассортимент товаров на складе -->
+    <h3>Ассортимент товаров на складе: </h3>
+    <table width="1200px" border-collapse = "collapse" border = "2 solid black">
+        <tr>
+            <th width="200px">названия товара</th>
+            <th width="200px">закупочная цена</th>
+            <th width="200px">цена продажи</th>
+            <th width="200px">количество товаров</th>
+            <th width="200px">удалить</th>
+            <th width="200px">продать</th>
+        </tr>
+        </table>
+</div>
+    <div id="productsList"></div>
+    <br><br>
+    <hr>
+
+    <!-- Логирование операций -->
+    <h3>Логирование операций: </h3>
+    <table width="700px" border-collapse = "collapse" border = "2 solid black">
+        <tr>
+            <th width="100px">id</th>
+            <th width="200px">Наименование</th>
+            <th width="200px">Операция</th>
+            <th width="200px">Дата и время</th>
+        </tr>
+        </table>
+    <div id="logList"></div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

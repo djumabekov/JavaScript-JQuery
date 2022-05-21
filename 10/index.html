@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- поле для исходного текста  -->
+    <input id="sourceText" type="text">
+    <!-- выпадающий список языков для исходного текста -->
+    <select id="sourceLang"></select>
+    <!-- выпадающий список языков для перевода -->
+    <select id="targetLang"></select>
+    <!-- кнопка перевода без автоопределения языка -->
+    <button id="translateBtn">Translate</button>
+    <!-- кнопка перевода с автоопределением языка -->
+    <button id="translateWithAutodetectBtn">Translate With Autodetect</button>
+    <!-- поле вывода результата перевода -->
+    <div id="resultText"></div>
+    
+    <br><br>
+
+    <!-- блок вывода истории переводов  -->
+    <div id="historyText"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
